@@ -1,0 +1,110 @@
+{
+  "dataset_name": "BioCreative V CDR (Chemical-Disease Relation)",
+  "dataset_source": "BioCreative V Challenge / T-NER Benchmark (PubMed Abstracts)",
+  "entity_types": [
+    "Chemical",
+    "Disease"
+  ],
+  "label_mapping": {
+    "O": 0,
+    "B-Chemical": 1,
+    "B-Disease": 2,
+    "I-Disease": 3,
+    "I-Chemical": 4
+  },
+  "tagging_scheme": "BIO (Begin, Inside, Outside)",
+  "total_sentences": 16423,
+  "total_tokens": 334598,
+  "splits": {
+    "train": {
+      "split": "train",
+      "num_sentences": 5228,
+      "total_tokens": 109322,
+      "avg_sentence_len": 20.910864575363426,
+      "std_sentence_len": 14.486217910551181,
+      "median_sentence_len": 18.0,
+      "min_sentence_len": 1,
+      "max_sentence_len": 133,
+      "empty_sentences": 0,
+      "internal_duplicates": 87,
+      "token_tag_distribution": {
+        "B-Chemical": 5203,
+        "O": 96796,
+        "B-Disease": 4182,
+        "I-Disease": 2570,
+        "I-Chemical": 571
+      },
+      "entity_span_distribution": {
+        "Chemical": 5203,
+        "Disease": 4182
+      },
+      "avg_entity_length": {
+        "Disease": 1.6145384983261597,
+        "Chemical": 1.1097443782433212
+      }
+    },
+    "validation": {
+      "split": "validation",
+      "num_sentences": 5330,
+      "total_tokens": 108958,
+      "avg_sentence_len": 20.442401500938086,
+      "std_sentence_len": 14.178497694023683,
+      "median_sentence_len": 18.0,
+      "min_sentence_len": 1,
+      "max_sentence_len": 232,
+      "empty_sentences": 0,
+      "internal_duplicates": 128,
+      "token_tag_distribution": {
+        "B-Disease": 4244,
+        "I-Disease": 2416,
+        "O": 96413,
+        "B-Chemical": 5347,
+        "I-Chemical": 538
+      },
+      "entity_span_distribution": {
+        "Disease": 4244,
+        "Chemical": 5347
+      },
+      "avg_entity_length": {
+        "Disease": 1.5692742695570217,
+        "Chemical": 1.1006171685057042
+      }
+    },
+    "test": {
+      "split": "test",
+      "num_sentences": 5865,
+      "total_tokens": 116318,
+      "avg_sentence_len": 19.832566069906225,
+      "std_sentence_len": 13.742756473079602,
+      "median_sentence_len": 17.0,
+      "min_sentence_len": 1,
+      "max_sentence_len": 135,
+      "empty_sentences": 0,
+      "internal_duplicates": 152,
+      "token_tag_distribution": {
+        "B-Chemical": 5385,
+        "O": 103684,
+        "B-Disease": 4424,
+        "I-Disease": 2424,
+        "I-Chemical": 401
+      },
+      "entity_span_distribution": {
+        "Chemical": 5385,
+        "Disease": 4424
+      },
+      "avg_entity_length": {
+        "Disease": 1.5479204339963835,
+        "Chemical": 1.0744661095636026
+      }
+    }
+  },
+  "total_entity_spans": {
+    "Chemical": 15935,
+    "Disease": 12850
+  },
+  "data_leakage_and_overlap_audit": {
+    "train_valid_identical_sentence_overlap": 55,
+    "train_test_identical_sentence_overlap": 64,
+    "valid_test_identical_sentence_overlap": 55
+  }
+}

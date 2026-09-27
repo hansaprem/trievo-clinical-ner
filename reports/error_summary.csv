@@ -1,0 +1,5 @@
+Dataset,Gold_Entities,Pred_Entities,Exact_Matches_TP,Pure_False_Positives,Pure_False_Negatives,Boundary_Errors,Entity_Type_Errors,Partial_Type_Errors,Precision,Recall,F1,Boundary_Error_Pct_of_Errors,Pure_FN_Pct_of_Errors,Pure_FP_Pct_of_Errors
+BC5CDR,1488,1563,1172,200,180,182,10,0,0.7498,0.7876,0.7683,31.82%,31.47%,34.97%
+NCBI Disease,922,922,699,98,129,125,0,0,0.7581,0.7581,0.7581,35.51%,36.65%,27.84%
+JNLPBA,1946,2237,1473,379,129,289,69,52,0.6585,0.7569,0.7043,31.48%,14.05%,41.29%
+AnatEM,1105,1056,860,72,149,127,0,0,0.8144,0.7783,0.7959,36.49%,42.82%,20.69%

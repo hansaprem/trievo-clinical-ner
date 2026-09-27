@@ -1,0 +1,36 @@
+{
+  "experiment_name": "anatem_pubmedbert",
+  "model_name": "C:\\Users\\khan computer\\.gemini\\antigravity\\scratch\\trievo-clinical-ner\\pretrained_backbones\\pubmedbert",
+  "parameters": 108893955,
+  "training_time_seconds": 2041.75,
+  "training_time_minutes": 34.03,
+  "checkpoint_size_mb": 1663.12,
+  "inference_latency_ms_per_sentence": 108.68,
+  "validation_precision": 0.8382,
+  "validation_recall": 0.8382,
+  "validation_f1": 0.8382,
+  "test_precision": 0.8237,
+  "test_recall": 0.7886,
+  "test_f1": 0.8058,
+  "per_entity_test_metrics": {
+    "Anatomy": {
+      "f1": 0.8058,
+      "precision": 0.8237,
+      "recall": 0.7886,
+      "support": 4616
+    },
+    "Chemical": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 0
+    },
+    "Disease": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 0
+    }
+  },
+  "accuracy_statement": "Accuracy was not reported because entity-level F1 is the primary NER evaluation metric."
+}

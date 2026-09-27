@@ -1,0 +1,55 @@
+{
+  "audit_timestamp": "2026-09-27",
+  "standards": {
+    "test_sample_count": 900,
+    "train_test_overlap_threshold": 0,
+    "valid_test_overlap_threshold": 0,
+    "test_internal_duplicate_threshold": 0
+  },
+  "datasets": {
+    "BC5CDR": {
+      "status": "PASSED (Zero Leakage)",
+      "train_sentences_checked": 5228,
+      "valid_sentences_checked": 5330,
+      "original_test_sentences_checked": 5865,
+      "selected_test_sentences": 900,
+      "train_test_overlap_count": 0,
+      "valid_test_overlap_count": 0,
+      "internal_test_duplicates_count": 0,
+      "invalid_bio_transitions_count": 0
+    },
+    "NCBI Disease": {
+      "status": "PASSED (Zero Leakage)",
+      "train_sentences_checked": 5432,
+      "valid_sentences_checked": 923,
+      "original_test_sentences_checked": 940,
+      "selected_test_sentences": 900,
+      "train_test_overlap_count": 0,
+      "valid_test_overlap_count": 0,
+      "internal_test_duplicates_count": 0,
+      "invalid_bio_transitions_count": 0
+    },
+    "JNLPBA": {
+      "status": "PASSED (Zero Leakage)",
+      "train_sentences_checked": 16619,
+      "valid_sentences_checked": 1927,
+      "original_test_sentences_checked": 3856,
+      "selected_test_sentences": 900,
+      "train_test_overlap_count": 0,
+      "valid_test_overlap_count": 0,
+      "internal_test_duplicates_count": 0,
+      "invalid_bio_transitions_count": 0
+    },
+    "AnatEM": {
+      "status": "PASSED (Zero Leakage)",
+      "train_sentences_checked": 5861,
+      "valid_sentences_checked": 2118,
+      "original_test_sentences_checked": 3830,
+      "selected_test_sentences": 900,
+      "train_test_overlap_count": 0,
+      "valid_test_overlap_count": 0,
+      "internal_test_duplicates_count": 0,
+      "invalid_bio_transitions_count": 0
+    }
+  }
+}

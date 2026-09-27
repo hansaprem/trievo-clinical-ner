@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Caches and Virtual Environments
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+env/
+.venv/
+ENV/
+build/
+dist/
+
+# Node / Frontend Artifacts
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vercel
+
+# Environment, Local Configurations, & Secrets
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+*.token
+
+# System & OS Files
+.DS_Store
+Thumbs.db
+*.log
+
+# Heavy Machine Learning Weights & Training Artifacts
+# Model weights (.safetensors) are hosted externally to comply with GitHub 100MB quota
+*.safetensors
+*.pt
+*.pth
+*.bin
+
+# Training Checkpoints and Optimizer States
+models/**/checkpoint-*/
+checkpoint-*/
+models/**/optimizer.pt
+models/**/scheduler.pt
+models/**/trainer_state.json
+models/**/training_args.bin
+models/**/training_config.json
+models/best_clinical_ner/
+experiments/
+archive/
+pretrained_backbones/

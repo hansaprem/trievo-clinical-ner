@@ -1,0 +1,50 @@
+{
+  "protein": {
+    "protein": 931,
+    "cell_type": 6,
+    "DNA": 20,
+    "cell_line": 3,
+    "RNA": 0,
+    "None (O)": 69
+  },
+  "cell_type": {
+    "protein": 8,
+    "cell_type": 313,
+    "DNA": 0,
+    "cell_line": 33,
+    "RNA": 0,
+    "None (O)": 37
+  },
+  "DNA": {
+    "protein": 23,
+    "cell_type": 0,
+    "DNA": 143,
+    "cell_line": 1,
+    "RNA": 0,
+    "None (O)": 17
+  },
+  "cell_line": {
+    "protein": 3,
+    "cell_type": 12,
+    "DNA": 0,
+    "cell_line": 70,
+    "RNA": 0,
+    "None (O)": 4
+  },
+  "RNA": {
+    "protein": 10,
+    "cell_type": 0,
+    "DNA": 2,
+    "cell_line": 0,
+    "RNA": 16,
+    "None (O)": 2
+  },
+  "None (O)": {
+    "protein": 253,
+    "cell_type": 63,
+    "DNA": 39,
+    "cell_line": 21,
+    "RNA": 3,
+    "None (O)": 0
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "train": {
+    "sentences": 5432,
+    "tokens": 136086,
+    "disease_entities": 5145,
+    "tag_distribution": {
+      "O": 124819,
+      "B-Disease": 5145,
+      "I-Disease": 6122
+    },
+    "malformed_lines": 0,
+    "malformed_sentences": 0,
+    "invalid_transitions": 0
+  },
+  "valid": {
+    "sentences": 923,
+    "tokens": 23969,
+    "disease_entities": 787,
+    "tag_distribution": {
+      "O": 22092,
+      "B-Disease": 787,
+      "I-Disease": 1090
+    },
+    "malformed_lines": 0,
+    "malformed_sentences": 0,
+    "invalid_transitions": 0
+  },
+  "test": {
+    "sentences": 940,
+    "tokens": 24497,
+    "disease_entities": 960,
+    "tag_distribution": {
+      "O": 22450,
+      "B-Disease": 960,
+      "I-Disease": 1087
+    },
+    "malformed_lines": 0,
+    "malformed_sentences": 0,
+    "invalid_transitions": 0
+  }
+}

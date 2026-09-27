@@ -1,0 +1,97 @@
+{
+  "dataset": "JNLPBA / BioNLP 2004",
+  "domain": "Molecular Biology (MEDLINE abstracts)",
+  "entity_types": [
+    "DNA",
+    "RNA",
+    "protein",
+    "cell_type",
+    "cell_line"
+  ],
+  "num_classes": 11,
+  "splits": {
+    "train": {
+      "sentences": 16619,
+      "tokens": 441717,
+      "entities": 45748
+    },
+    "valid": {
+      "sentences": 1927,
+      "tokens": 50824,
+      "entities": 5553
+    },
+    "test": {
+      "sentences": 3856,
+      "tokens": 101037,
+      "entities": 8662
+    }
+  },
+  "tag_counts": {
+    "train": {
+      "O": 344350,
+      "B-cell_line": 3325,
+      "B-protein": 27240,
+      "I-protein": 22105,
+      "I-cell_line": 6447,
+      "B-DNA": 8273,
+      "I-DNA": 13674,
+      "B-cell_type": 6090,
+      "I-cell_type": 8052,
+      "B-RNA": 820,
+      "I-RNA": 1341
+    },
+    "valid": {
+      "B-DNA": 1260,
+      "I-DNA": 2100,
+      "O": 38603,
+      "B-protein": 3029,
+      "I-protein": 2743,
+      "B-cell_type": 628,
+      "I-cell_type": 696,
+      "B-cell_line": 505,
+      "I-cell_line": 940,
+      "B-RNA": 131,
+      "I-RNA": 189
+    },
+    "test": {
+      "O": 81645,
+      "B-protein": 5067,
+      "I-protein": 4774,
+      "B-cell_type": 1921,
+      "I-cell_type": 2991,
+      "B-DNA": 1056,
+      "I-DNA": 1789,
+      "B-cell_line": 500,
+      "I-cell_line": 989,
+      "B-RNA": 118,
+      "I-RNA": 187
+    }
+  },
+  "entity_counts": {
+    "train": {
+      "cell_line": 3325,
+      "protein": 27240,
+      "DNA": 8273,
+      "cell_type": 6090,
+      "RNA": 820
+    },
+    "valid": {
+      "DNA": 1260,
+      "protein": 3029,
+      "cell_type": 628,
+      "cell_line": 505,
+      "RNA": 131
+    },
+    "test": {
+      "protein": 5067,
+      "cell_type": 1921,
+      "DNA": 1056,
+      "cell_line": 500,
+      "RNA": 118
+    }
+  },
+  "integrity_checks": {
+    "invalid_bio_transitions": 0,
+    "empty_sentences": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "experiment_name": "ncbi_disease_pubmedbert",
+  "model_name": "C:\\Users\\khan computer\\.gemini\\antigravity\\scratch\\trievo-clinical-ner\\pretrained_backbones\\pubmedbert",
+  "parameters": 108893955,
+  "training_time_seconds": 19614.11,
+  "training_time_minutes": 326.9,
+  "checkpoint_size_mb": 1663.11,
+  "inference_latency_ms_per_sentence": 75.71,
+  "validation_precision": 0.7426,
+  "validation_recall": 0.7594,
+  "validation_f1": 0.7509,
+  "test_precision": 0.7534,
+  "test_recall": 0.751,
+  "test_f1": 0.7522,
+  "per_entity_test_metrics": {
+    "Disease": {
+      "f1": 0.7522,
+      "precision": 0.7534,
+      "recall": 0.751,
+      "support": 960
+    },
+    "Chemical": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 0
+    }
+  },
+  "accuracy_statement": "Accuracy was not reported because entity-level F1 is the primary NER evaluation metric."
+}

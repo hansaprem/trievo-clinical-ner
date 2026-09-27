@@ -1,0 +1,26 @@
+{
+  "experiment_name": "pubmedbert",
+  "model_name": "./pretrained_backbones/pubmedbert",
+  "parameters": 108895493,
+  "training_time_seconds": 4997.97,
+  "training_time_minutes": 83.3,
+  "checkpoint_size_mb": 1663.14,
+  "inference_latency_ms_per_sentence": 68.13,
+  "validation_precision": 0.6894,
+  "validation_recall": 0.7319,
+  "validation_f1": 0.71,
+  "test_precision": 0.8071,
+  "test_recall": 0.8339,
+  "test_f1": 0.8203,
+  "per_entity_test_metrics": {
+    "Chemical_f1": 0.8432,
+    "Chemical_precision": 0.8832,
+    "Chemical_recall": 0.8067,
+    "Chemical_support": 150,
+    "Disease_f1": 0.7955,
+    "Disease_precision": 0.7343,
+    "Disease_recall": 0.8678,
+    "Disease_support": 121
+  },
+  "accuracy_statement": "Accuracy was not reported because entity-level F1 is the primary NER evaluation metric."
+}

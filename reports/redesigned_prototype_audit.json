@@ -1,0 +1,315 @@
+{
+  "status": "PASS",
+  "api_url": "http://127.0.0.1:8000",
+  "frontend_url": "http://127.0.0.1:5173",
+  "backend_health": {
+    "status": "healthy",
+    "models_loaded": true,
+    "models": [
+      "BC5CDR",
+      "NCBI Disease",
+      "JNLPBA",
+      "AnatEM"
+    ]
+  },
+  "total_scenarios_tested": 7,
+  "total_entities_extracted": 28,
+  "scenarios": [
+    {
+      "category": "General Clinical",
+      "title": "Pulmonology Case",
+      "text": "The patient was diagnosed with pneumonia and prescribed aspirin. CT imaging demonstrated involvement of the right lung, while elevated p53 protein levels were noted.",
+      "entity_count": 5,
+      "entities": [
+        {
+          "text": "pneumonia",
+          "label": "DISEASE",
+          "start": 31,
+          "end": 40,
+          "source_model": "BC5CDR, NCBI Disease",
+          "confidence": 0.6933
+        },
+        {
+          "text": "aspirin",
+          "label": "CHEMICAL",
+          "start": 56,
+          "end": 63,
+          "source_model": "BC5CDR",
+          "confidence": 0.9337
+        },
+        {
+          "text": "right lung",
+          "label": "ANATOMY",
+          "start": 108,
+          "end": 118,
+          "source_model": "AnatEM",
+          "confidence": 0.8534
+        },
+        {
+          "text": "p53",
+          "label": "CHEMICAL",
+          "start": 135,
+          "end": 138,
+          "source_model": "BC5CDR",
+          "confidence": 0.5642
+        },
+        {
+          "text": "p53",
+          "label": "PROTEIN",
+          "start": 135,
+          "end": 138,
+          "source_model": "JNLPBA",
+          "confidence": 0.9252
+        }
+      ]
+    },
+    {
+      "category": "Oncology",
+      "title": "Hematologic Malignancy",
+      "text": "Acute lymphoblastic leukemia was identified in the bone marrow biopsy, and methotrexate chemotherapy was promptly initiated.",
+      "entity_count": 4,
+      "entities": [
+        {
+          "text": "Acute lymphoblastic leukemia",
+          "label": "ANATOMY",
+          "start": 0,
+          "end": 28,
+          "source_model": "AnatEM",
+          "confidence": 0.9696
+        },
+        {
+          "text": "Acute lymphoblastic leukemia",
+          "label": "DISEASE",
+          "start": 0,
+          "end": 28,
+          "source_model": "BC5CDR, NCBI Disease",
+          "confidence": 0.6704
+        },
+        {
+          "text": "bone marrow biopsy",
+          "label": "ANATOMY",
+          "start": 51,
+          "end": 69,
+          "source_model": "AnatEM",
+          "confidence": 0.937
+        },
+        {
+          "text": "methotrexate",
+          "label": "CHEMICAL",
+          "start": 75,
+          "end": 87,
+          "source_model": "BC5CDR",
+          "confidence": 0.9648
+        }
+      ]
+    },
+    {
+      "category": "Molecular Biology",
+      "title": "Cellular Signaling",
+      "text": "Elevated p53 protein expression was observed in the human tumor cells, along with significantly increased cytoplasmic mRNA levels.",
+      "entity_count": 8,
+      "entities": [
+        {
+          "text": "p53",
+          "label": "CHEMICAL",
+          "start": 9,
+          "end": 12,
+          "source_model": "BC5CDR",
+          "confidence": 0.5979
+        },
+        {
+          "text": "p53",
+          "label": "PROTEIN",
+          "start": 9,
+          "end": 12,
+          "source_model": "JNLPBA",
+          "confidence": 0.9119
+        },
+        {
+          "text": "human",
+          "label": "CELL_LINE",
+          "start": 52,
+          "end": 57,
+          "source_model": "JNLPBA",
+          "confidence": 0.7337
+        },
+        {
+          "text": "tumor cells",
+          "label": "ANATOMY",
+          "start": 58,
+          "end": 69,
+          "source_model": "AnatEM",
+          "confidence": 0.9868
+        },
+        {
+          "text": "tumor",
+          "label": "CELL_TYPE",
+          "start": 58,
+          "end": 63,
+          "source_model": "JNLPBA",
+          "confidence": 0.4867
+        },
+        {
+          "text": "cells",
+          "label": "CELL_LINE",
+          "start": 64,
+          "end": 69,
+          "source_model": "JNLPBA",
+          "confidence": 0.6298
+        },
+        {
+          "text": "cytoplasmic mRNA",
+          "label": "RNA",
+          "start": 106,
+          "end": 122,
+          "source_model": "JNLPBA",
+          "confidence": 0.5068
+        },
+        {
+          "text": "cytoplasmic",
+          "label": "ANATOMY",
+          "start": 106,
+          "end": 117,
+          "source_model": "AnatEM",
+          "confidence": 0.9785
+        }
+      ]
+    },
+    {
+      "category": "Genetics",
+      "title": "Genomic Mutation",
+      "text": "The study identified an oncogenic mutation adjacent to the c-myc gene and sequenced the corresponding target DNA locus.",
+      "entity_count": 2,
+      "entities": [
+        {
+          "text": "c-myc gene",
+          "label": "DNA",
+          "start": 59,
+          "end": 69,
+          "source_model": "JNLPBA",
+          "confidence": 0.9494
+        },
+        {
+          "text": "target DNA locus",
+          "label": "DNA",
+          "start": 102,
+          "end": 118,
+          "source_model": "JNLPBA",
+          "confidence": 0.8812
+        }
+      ]
+    },
+    {
+      "category": "Pharmacology",
+      "title": "Immunosuppressive Regimen",
+      "text": "Following allograft surgery, the patient received tacrolimus, cyclosporine, and low-dose methotrexate during the maintenance period.",
+      "entity_count": 4,
+      "entities": [
+        {
+          "text": "allograft",
+          "label": "ANATOMY",
+          "start": 10,
+          "end": 19,
+          "source_model": "AnatEM",
+          "confidence": 0.9752
+        },
+        {
+          "text": "tacrolimus",
+          "label": "CHEMICAL",
+          "start": 50,
+          "end": 60,
+          "source_model": "BC5CDR",
+          "confidence": 0.9662
+        },
+        {
+          "text": "cyclosporine",
+          "label": "CHEMICAL",
+          "start": 62,
+          "end": 74,
+          "source_model": "BC5CDR",
+          "confidence": 0.9467
+        },
+        {
+          "text": "methotrexate",
+          "label": "CHEMICAL",
+          "start": 89,
+          "end": 101,
+          "source_model": "BC5CDR",
+          "confidence": 0.9647
+        }
+      ]
+    },
+    {
+      "category": "Anatomy",
+      "title": "Visceral Tissue Pathology",
+      "text": "Contrast imaging demonstrated localized hypodensity involving the left kidney cortex and posterior right lung parenchyma.",
+      "entity_count": 2,
+      "entities": [
+        {
+          "text": "left kidney cortex",
+          "label": "ANATOMY",
+          "start": 66,
+          "end": 84,
+          "source_model": "AnatEM",
+          "confidence": 0.9024
+        },
+        {
+          "text": "right lung parenchyma",
+          "label": "ANATOMY",
+          "start": 99,
+          "end": 120,
+          "source_model": "AnatEM",
+          "confidence": 0.8034
+        }
+      ]
+    },
+    {
+      "category": "Mixed Biomedical",
+      "title": "Multidisciplinary Findings",
+      "text": "A biopsy of the renal parenchyma in a patient with chronic glomerulonephritis confirmed antibody deposition and marked cellular infiltration.",
+      "entity_count": 3,
+      "entities": [
+        {
+          "text": "renal parenchyma",
+          "label": "ANATOMY",
+          "start": 16,
+          "end": 32,
+          "source_model": "AnatEM",
+          "confidence": 0.9907
+        },
+        {
+          "text": "chronic glomerulonephritis",
+          "label": "DISEASE",
+          "start": 51,
+          "end": 77,
+          "source_model": "BC5CDR, NCBI Disease",
+          "confidence": 0.7187
+        },
+        {
+          "text": "cellular",
+          "label": "ANATOMY",
+          "start": 119,
+          "end": 127,
+          "source_model": "AnatEM",
+          "confidence": 0.989
+        }
+      ]
+    }
+  ],
+  "input_validation_test": {
+    "status": 400,
+    "headers": {
+      "date": "Sun, 27 Sep 2026 19:38:09 GMT",
+      "server": "uvicorn",
+      "content-length": "59",
+      "content-type": "application/json",
+      "access-control-allow-credentials": "true",
+      "access-control-allow-origin": "http://127.0.0.1:5173",
+      "vary": "Origin",
+      "connection": "close"
+    },
+    "data": {
+      "detail": "Input text cannot be empty or whitespace-only."
+    }
+  }
+}

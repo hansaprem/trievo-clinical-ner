@@ -1,0 +1,4 @@
+Gold_Label,Pred_Chemical,Pred_Disease,Pred_None (O)
+Chemical,705,6,85
+Disease,4,467,95
+None (O),97,103,0

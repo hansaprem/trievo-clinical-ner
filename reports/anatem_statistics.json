@@ -1,0 +1,62 @@
+{
+  "dataset": "AnatEM (Anatomical Entity Mention Corpus)",
+  "source": "Pyysalo & Ananiadou (2014) / Cambridge MTL-Bioinformatics",
+  "domain": "Biomedical Literature (PubMed Abstracts)",
+  "entity_types": [
+    "Anatomy"
+  ],
+  "label_map": {
+    "O": 0,
+    "B-Anatomy": 1,
+    "I-Anatomy": 2
+  },
+  "splits": {
+    "train": {
+      "sentences": 5861,
+      "tokens": 153823,
+      "entities": 6946
+    },
+    "valid": {
+      "sentences": 2118,
+      "tokens": 58785,
+      "entities": 2139
+    },
+    "test": {
+      "sentences": 3830,
+      "tokens": 99976,
+      "entities": 4616
+    }
+  },
+  "tag_counts": {
+    "train": {
+      "O": 141983,
+      "B-Anatomy": 6946,
+      "I-Anatomy": 4894
+    },
+    "valid": {
+      "O": 55230,
+      "B-Anatomy": 2139,
+      "I-Anatomy": 1416
+    },
+    "test": {
+      "O": 92113,
+      "B-Anatomy": 4616,
+      "I-Anatomy": 3247
+    }
+  },
+  "entity_counts": {
+    "train": {
+      "Anatomy": 6946
+    },
+    "valid": {
+      "Anatomy": 2139
+    },
+    "test": {
+      "Anatomy": 4616
+    }
+  },
+  "integrity_checks": {
+    "invalid_bio_transitions": 0,
+    "empty_sentences": 0
+  }
+}

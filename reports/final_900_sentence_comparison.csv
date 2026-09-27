@@ -1,0 +1,6 @@
+Dataset,Domain,Test_Sentences,Test_Tokens,Gold_Entities,Predicted_Entities,Precision,Recall,Entity_F1,Entity_Types,Checkpoint_Path
+BC5CDR,Biomedical Literature,900,17574,1488,1563,0.7498,0.7876,0.7683,"Chemical, Disease",models\bc5cdr_pubmedbert
+NCBI Disease,Biomedical Literature,900,23561,922,922,0.7581,0.7581,0.7581,Disease,models\ncbi_disease_pubmedbert
+JNLPBA,Molecular Biology,900,23074,1946,2237,0.6585,0.7569,0.7043,"Protein, DNA, RNA, Cell Type, Cell Line",models\jnlpba_pubmedbert
+AnatEM,Biomedical Literature,900,24526,1105,1056,0.8144,0.7783,0.7959,Anatomy,models\anatem_pubmedbert
+Macro-average across datasets,Multi-domain Average,"900 per dataset (3,600 total)",88735,5461,5778,0.7452,0.7702,0.7567,"Chemical, Disease, Protein, DNA, RNA, Cell Type, Cell Line, Anatomy",N/A

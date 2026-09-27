@@ -1,0 +1,7 @@
+Gold_Label,Pred_protein,Pred_cell_type,Pred_DNA,Pred_cell_line,Pred_RNA,Pred_None (O)
+protein,931,6,20,3,0,69
+cell_type,8,313,0,33,0,37
+DNA,23,0,143,1,0,17
+cell_line,3,12,0,70,0,4
+RNA,10,0,2,0,16,2
+None (O),253,63,39,21,3,0

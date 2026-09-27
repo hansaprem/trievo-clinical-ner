@@ -1,0 +1,57 @@
+{
+  "root": {
+    "status_code": 200,
+    "body": {
+      "name": "Trievo Clinical NER API",
+      "status": "running",
+      "version": "1.0.0"
+    }
+  },
+  "health": {
+    "status_code": 200,
+    "body": {
+      "status": "healthy",
+      "models_loaded": true,
+      "models": [
+        "BC5CDR",
+        "NCBI Disease",
+        "JNLPBA",
+        "AnatEM"
+      ]
+    }
+  },
+  "predict": {
+    "status_code": 200,
+    "body": {
+      "text": "The patient was prescribed aspirin for pneumonia.",
+      "entities": [
+        {
+          "text": "aspirin",
+          "label": "CHEMICAL",
+          "start": 27,
+          "end": 34,
+          "source_model": "BC5CDR",
+          "confidence": 0.9538
+        },
+        {
+          "text": "pneumonia",
+          "label": "DISEASE",
+          "start": 39,
+          "end": 48,
+          "source_model": "BC5CDR",
+          "confidence": 0.8198
+        }
+      ]
+    }
+  },
+  "docs": {
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "empty_error": {
+    "status_code": 400,
+    "body": {
+      "detail": "Input text cannot be empty or whitespace-only."
+    }
+  }
+}

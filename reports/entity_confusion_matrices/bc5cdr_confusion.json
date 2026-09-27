@@ -1,0 +1,17 @@
+{
+  "Chemical": {
+    "Chemical": 705,
+    "Disease": 6,
+    "None (O)": 85
+  },
+  "Disease": {
+    "Chemical": 4,
+    "Disease": 467,
+    "None (O)": 95
+  },
+  "None (O)": {
+    "Chemical": 97,
+    "Disease": 103,
+    "None (O)": 0
+  }
+}

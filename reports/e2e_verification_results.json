@@ -1,0 +1,116 @@
+{
+  "status": "SUCCESS",
+  "api_url": "http://127.0.0.1:8000",
+  "frontend_url": "http://127.0.0.1:5173",
+  "backend_health": {
+    "status": "healthy",
+    "models_loaded": true,
+    "models": [
+      "BC5CDR",
+      "NCBI Disease",
+      "JNLPBA",
+      "AnatEM"
+    ]
+  },
+  "example_1": {
+    "input_text": "The patient was diagnosed with pneumonia and prescribed aspirin. CT imaging demonstrated involvement of the right lung, while elevated p53 protein levels were noted.",
+    "entities_count": 5,
+    "entities": [
+      {
+        "text": "pneumonia",
+        "label": "DISEASE",
+        "start": 31,
+        "end": 40,
+        "source_model": "BC5CDR, NCBI Disease",
+        "confidence": 0.6933
+      },
+      {
+        "text": "aspirin",
+        "label": "CHEMICAL",
+        "start": 56,
+        "end": 63,
+        "source_model": "BC5CDR",
+        "confidence": 0.9337
+      },
+      {
+        "text": "right lung",
+        "label": "ANATOMY",
+        "start": 108,
+        "end": 118,
+        "source_model": "AnatEM",
+        "confidence": 0.8534
+      },
+      {
+        "text": "p53",
+        "label": "CHEMICAL",
+        "start": 135,
+        "end": 138,
+        "source_model": "BC5CDR",
+        "confidence": 0.5642
+      },
+      {
+        "text": "p53",
+        "label": "PROTEIN",
+        "start": 135,
+        "end": 138,
+        "source_model": "JNLPBA",
+        "confidence": 0.9252
+      }
+    ]
+  },
+  "example_2": {
+    "input_text": "Acute lymphoblastic leukemia was identified in bone marrow biopsy, treated with methotrexate.",
+    "entities_count": 4,
+    "entities": [
+      {
+        "text": "Acute lymphoblastic leukemia",
+        "label": "ANATOMY",
+        "start": 0,
+        "end": 28,
+        "source_model": "AnatEM",
+        "confidence": 0.974
+      },
+      {
+        "text": "Acute lymphoblastic leukemia",
+        "label": "DISEASE",
+        "start": 0,
+        "end": 28,
+        "source_model": "BC5CDR, NCBI Disease",
+        "confidence": 0.6657
+      },
+      {
+        "text": "bone marrow biopsy",
+        "label": "ANATOMY",
+        "start": 47,
+        "end": 65,
+        "source_model": "AnatEM",
+        "confidence": 0.9343
+      },
+      {
+        "text": "methotrexate",
+        "label": "CHEMICAL",
+        "start": 80,
+        "end": 92,
+        "source_model": "BC5CDR",
+        "confidence": 0.9622
+      }
+    ]
+  },
+  "empty_text_validation": {
+    "status": 400,
+    "headers": {
+      "date": "Sun, 27 Sep 2026 19:11:44 GMT",
+      "server": "uvicorn",
+      "content-length": "59",
+      "content-type": "application/json",
+      "access-control-allow-credentials": "true",
+      "access-control-allow-origin": "http://127.0.0.1:5173",
+      "vary": "Origin",
+      "connection": "close"
+    },
+    "data": {
+      "detail": "Input text cannot be empty or whitespace-only."
+    }
+  },
+  "cors_origin_header": "http://127.0.0.1:5173"
+}
