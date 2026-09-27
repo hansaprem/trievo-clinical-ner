@@ -3,7 +3,7 @@ services:
     name: trievo-clinical-ner-backend
     runtime: python
     region: oregon
-    plan: starter  # Requires >= 1GB RAM to safely host all 4 PubMedBERT models concurrently
+    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT --workers 1
     healthCheckPath: /health
