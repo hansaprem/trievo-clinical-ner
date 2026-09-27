@@ -4,7 +4,12 @@
 
 import { HealthResponse, PredictRequest, PredictResponse } from '../types/ner';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
+const PRODUCTION_BACKEND_URL = 'https://parents-acting-explanation-realty.trycloudflare.com';
+
+const API_BASE_URL = (
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.PROD ? PRODUCTION_BACKEND_URL : 'http://127.0.0.1:8000')
+).replace(/\/+$/, '');
 
 export class ApiError extends Error {
   statusCode?: number;
